@@ -1,0 +1,9 @@
+/assets/*
+  cache-control: max-age=31536000
+  cache-control: immutable
+
+/season/*
+  cache-control: max-age=86400
+
+/hero/*
+  cache-control: max-age=86400

@@ -1,0 +1,8 @@
+# robots.txt for ZLWiki
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: *
+Disallow:
+
+Sitemap: https://docs.clock-fun.top/sitemap.xml
