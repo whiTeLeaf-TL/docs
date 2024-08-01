@@ -14,7 +14,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   cleanUrls: true,
   sitemap: {
-    hostname: "https://docs.clock-fun.top",
+    hostname: "https://tldocs.whiteleaf.cn",
   },
   themeConfig: {
     // logo: { src: "/server-icon.png", width: 30, height: 38 },
@@ -91,11 +91,11 @@ export default defineConfig({
       },
     ],
     editLink: {
-      pattern: "https://github.com/CrashVibe/docs/edit/master/docs/:path",
+      pattern: "https://github.com/whiTeLeaf-TL//docs/edit/master/docs/:path",
       text: "在 Github 上编辑此页",
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/CrashVibe/docs" },
+      { icon: "github", link: "https://github.com/whiTeLeaf-TL//docs" },
     ],
     search: {
       provider: "local",
