@@ -28,3 +28,5 @@
 - 使用命令`/plot home`传送回地皮
 
 - 使用命令`/plot add <player>`将指定的玩家添加进你的地皮
+
+- 使用命令`/plot remove <player>`从你的地皮移除指定玩家
