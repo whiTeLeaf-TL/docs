@@ -91,7 +91,7 @@ export default defineConfig({
       },
     ],
     editLink: {
-      pattern: "https://github.com/whiTeLeaf-TL/docs/edit/master/docs/:path",
+      pattern: "https://github.com/whiTeLeaf-TL/docs/edit/main/docs/:path",
       text: "在 Github 上编辑此页",
     },
     socialLinks: [
