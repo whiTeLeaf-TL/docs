@@ -18,7 +18,7 @@ const coreMembers = [
     links: [
       { icon: 'github', link: 'https://github.com/wling-art' }
     ],
-    sponsor: 'https://afdian.net/a/ZLServer',
+    sponsor: 'https://afdian.com/a/ZLServer',
     actionText: '捐赠'
   },
   {
@@ -31,6 +31,11 @@ const coreMembers = [
 ]
 
 const partners = [
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=2797202622&spec=100',
+    name: 'bftysb',
+    title: '捐赠 1 次, 共 200 元'
+  }
 ]
 </script>
 
