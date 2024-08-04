@@ -79,9 +79,6 @@
 
 ![指北针](pic/pic3.png)
 
-### 真·背包
-
-![Backpack](pic/pic4.png)
 
 <!--
 ## 相关链接
