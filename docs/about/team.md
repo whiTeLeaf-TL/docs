@@ -34,7 +34,7 @@ const partners = [
   {
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=2797202622&spec=100',
     name: 'bftysb',
-    title: '捐赠 1 次, 共 200 元'
+    title: '捐赠 2 次, 共 300 元'
   }
 ]
 </script>
