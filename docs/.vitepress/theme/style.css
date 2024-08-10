@@ -1,3 +1,5 @@
+@import './var.css';
+
 /**
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
@@ -96,7 +98,7 @@
             #bd34fe,
             #41d1ff);
     --vp-home-hero-image-filter: blur(44px);
-    --vp-home-hero-image-background-image: linear-gradient(135deg,   #bd34fe,
+    --vp-home-hero-image-background-image: linear-gradient(135deg, #bd34fe,
             #41d1ff);
     --vp-home-hero-image-filter: blur(150px);
 }
@@ -122,30 +124,4 @@
     --vp-custom-block-tip-text: var(--vp-c-text-1);
     --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
     --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
-}
-
-#cursor {
-    position: fixed;
-    width: 18px;
-    height: 18px;
-    border-radius: 25px;
-    opacity: 0.25;
-    z-index: 10086;
-    pointer-events: none;
-    background: #161414;
-    transition: 0.2s ease-in-out;
-    transition-property: background, opacity, transform;
-
-    &.hidden {
-        opacity: 0;
-    }
-
-    &.active {
-        opacity: 0.5;
-        transform: scale(0.5);
-    }
-
-    &.dark {
-        background: #fff;
-    }
 }
