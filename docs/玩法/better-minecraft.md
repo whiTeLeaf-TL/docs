@@ -80,9 +80,7 @@
 
 ![指北针](pic/pic3.png)
 
-
-<!--
-## 相关链接
+### 相关链接
 
 [插件官方网站](https://oddlama.github.io/vane/)
 -->
