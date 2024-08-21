@@ -37,7 +37,7 @@ const partners = [
     title: '捐赠 2 次, 共 300 元'
   },
   {
-    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1494482621spec=100',
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1494482621&spec=100',
     name: 'Qingyi_Q',
     title: '捐赠 1 次, 共 100 元'
   },
