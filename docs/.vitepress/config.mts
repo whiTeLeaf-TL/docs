@@ -1,11 +1,31 @@
 import { defineConfig } from "vitepress";
-
+import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
 import pkg from "../../package.json";
 
 export default defineConfig({
+  vite: {
+    optimizeDeps: {
+      exclude: [
+        "@nolebase/vitepress-plugin-enhanced-readabilities/client",
+        "@nolebase/ui",
+        "@nolebase/vitepress-plugin-inline-link-preview",
+        "@nolebase/vitepress-plugin-highlight-targeted-heading",
+      ],
+    },
+    ssr: {
+      noExternal: [
+        // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
+        "@nolebase/vitepress-plugin-enhanced-readabilities",
+        "@nolebase/ui",
+        "@nolebase/vitepress-plugin-highlight-targeted-heading",
+        "@nolebase/vitepress-plugin-inline-link-preview",
+      ],
+    },
+  },
   lang: "zh-CN",
   title: "白叶 Wiki",
   description: "感谢每一位玩家的到来💡",
+
   head: [
     ["link", { rel: "icon", href: "/server-icon.png" }],
     ["script", { async: "", src: "/m.js" }],
@@ -131,6 +151,10 @@ export default defineConfig({
     darkModeSwitchTitle: "切换到深色模式",
   },
   markdown: {
+    config(md) {
+      // 其他 markdown-it 配置...
+      md.use(InlineLinkPreviewElementTransform);
+    },
     image: {
       // 图片懒加载
       lazyLoading: true,
