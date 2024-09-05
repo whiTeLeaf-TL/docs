@@ -11,7 +11,7 @@
   },
   "license": "MPL 2.0",
   "devDependencies": {
-    "@nolebase/vitepress-plugin-enhanced-mark": "^2.4.0",
+    "@nolebase/vitepress-plugin-enhanced-mark": "^2.5.0",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.4.0",
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.4.0",
     "@nolebase/vitepress-plugin-inline-link-preview": "^2.4.0",
