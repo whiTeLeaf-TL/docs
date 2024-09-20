@@ -1,15 +1,35 @@
 import { defineConfig } from "vitepress";
 import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
 import pkg from "../../package.json";
+import { ThumbnailHashImages } from "@nolebase/vitepress-plugin-thumbnail-hash/vite";
+
+import { UnlazyImages } from "@nolebase/markdown-it-unlazy-img";
+
+import {
+  PageProperties,
+  PagePropertiesMarkdownSection,
+} from "@nolebase/vitepress-plugin-page-properties/vite";
+import { join } from "node:path";
 
 export default defineConfig({
   vite: {
+    plugins: [
+      ThumbnailHashImages(),
+      PageProperties(),
+      PagePropertiesMarkdownSection({
+        excludes: [
+          join("pages", "en", "index.md"),
+          join("pages", "zh-CN", "index.md"),
+        ],
+      }),
+    ],
     optimizeDeps: {
       exclude: [
-        "@nolebase/vitepress-plugin-enhanced-readabilities/client",
+        "@nolebase/vitepress-plugin-enhanced-readabilities",
         "@nolebase/ui",
         "@nolebase/vitepress-plugin-inline-link-preview",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
+        "@nolebase/vitepress-plugin-thumbnail-hash",
       ],
     },
     ssr: {
@@ -19,6 +39,7 @@ export default defineConfig({
         "@nolebase/ui",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
         "@nolebase/vitepress-plugin-inline-link-preview",
+        "@nolebase/vitepress-plugin-thumbnail-hash",
       ],
     },
   },
@@ -150,6 +171,7 @@ export default defineConfig({
     config(md) {
       // 其他 markdown-it 配置...
       md.use(InlineLinkPreviewElementTransform);
+      md.use(UnlazyImages, { imgElementTag: "NolebaseUnlazyImg" });
     },
     image: {
       // 图片懒加载
