@@ -35,7 +35,7 @@ queueMicrotask(() => {
     HoldLog.apply(console, arguments);
   };
   const ascll = [
-    `ZLW-0`,
+    `TLW-0`,
     `调用前置摄像头拍照成功，识别为【小笨蛋】.`,
     `Photo captured: `,
     `🤪`,
@@ -65,7 +65,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      "%c ⚡ Powered by ZL %c 你正在访问 ZL 服务器 Wiki",
+      "%c ⚡ Powered by TL %c 你正在访问 TL 服务器 Wiki",
       "color:white;background-color:#f0ad4e",
       ""
     ),
@@ -75,7 +75,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      "%c ZLW-3 %c 你已打开控制台",
+      "%c TLW-3 %c 你已打开控制台",
       "color:white;background-color:#4f90d9",
       ""
     ),
@@ -85,7 +85,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      "%c ZLW-4 %c 你现在正处于监控中",
+      "%c TLW-4 %c 你现在正处于监控中",
       "color:white;background-color:#d9534f",
       ""
     ),
@@ -95,7 +95,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      `%c ZLW-5 %c ${siteDateStatistics(new Date("2023-11-14"))}.`,
+      `%c TLW-5 %c ${siteDateStatistics(new Date("2023-11-14"))}.`,
       "color:white;background-color:#4f90d9",
       ""
     ),
@@ -110,7 +110,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      `%c ZLNetwork-1 %c 已连接到 TL 白叶 网络!`,
+      `%c TLNetwork-1 %c 已连接到 TL 白叶 网络!`,
       "color:white;background-color:#87ceeb",
       ""
     ),
@@ -119,7 +119,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      `%c ZLNetwork-2 %c 收发正常!`,
+      `%c TLNetwork-2 %c 收发正常!`,
       "color:white;background-color:#87ceeb",
       ""
     ),
@@ -128,7 +128,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      `%c ZLNetwork-3 %c 延迟：${Math.floor(Math.random() * 100 + 1)}ms`,
+      `%c TLNetwork-3 %c 延迟：${Math.floor(Math.random() * 100 + 1)}ms`,
       "color:white;background-color:#87ceeb",
       ""
     ),
@@ -137,7 +137,7 @@ queueMicrotask(() => {
   setTimeout(
     Log.bind(
       console,
-      `%c ZLNetwork-4 %c 已从 TL 白叶 网络断开!`,
+      `%c TLNetwork-4 %c 已从 TL 白叶 网络断开!`,
       "color:white;background-color:#87ceeb",
       ""
     ),
