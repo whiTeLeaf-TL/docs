@@ -52,16 +52,12 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: "👋 文档介绍",
+        text: "👋 服务器介绍",
         link: "/intro",
       },
       {
         text: "❓ 常见问题",
         link: "/issues",
-      },
-      {
-        text: "📘 服务器介绍",
-        link: "/server-intro",
       },
       {
         text: "入门",
