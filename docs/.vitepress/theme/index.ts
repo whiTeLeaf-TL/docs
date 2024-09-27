@@ -24,16 +24,11 @@ import { NolebaseHighlightTargetedHeading } from "@nolebase/vitepress-plugin-hig
 
 import "@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css";
 
-import { NolebaseUnlazyImg } from "@nolebase/vitepress-plugin-thumbnail-hash/client";
-
-import "@nolebase/vitepress-plugin-thumbnail-hash/client/style.css";
-
 export default {
   extends: DefaultTheme,
 
   enhanceApp: (ctx) => {
     vitepressNprogress(ctx);
-    ctx.app.component("NolebaseUnlazyImg", NolebaseUnlazyImg);
     ctx.app.use(NolebaseInlineLinkPreviewPlugin);
     ctx.app.provide(InjectionKey, {
       layoutSwitch: {

@@ -3,7 +3,6 @@ import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-in
 import pkg from "../../package.json";
 import { ThumbnailHashImages } from "@nolebase/vitepress-plugin-thumbnail-hash/vite";
 
-import { UnlazyImages } from "@nolebase/markdown-it-unlazy-img";
 
 import {
   PageProperties,
@@ -171,7 +170,6 @@ export default defineConfig({
     config(md) {
       // 其他 markdown-it 配置...
       md.use(InlineLinkPreviewElementTransform);
-      md.use(UnlazyImages, { imgElementTag: "NolebaseUnlazyImg" });
     },
     image: {
       // 图片懒加载
