@@ -3,28 +3,15 @@ import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-in
 import pkg from "../../package.json";
 import { ThumbnailHashImages } from "@nolebase/vitepress-plugin-thumbnail-hash/vite";
 
-
-import {
-  PageProperties,
-  PagePropertiesMarkdownSection,
-} from "@nolebase/vitepress-plugin-page-properties/vite";
-import { join } from "node:path";
+import { PageProperties } from "@nolebase/vitepress-plugin-page-properties/vite";
 
 export default defineConfig({
   vite: {
-    plugins: [
-      ThumbnailHashImages(),
-      PageProperties(),
-      PagePropertiesMarkdownSection({
-        excludes: [
-          join("pages", "en", "index.md"),
-          join("pages", "zh-CN", "index.md"),
-        ],
-      }),
-    ],
+    plugins: [ThumbnailHashImages(), PageProperties()],
     optimizeDeps: {
       exclude: [
         "@nolebase/vitepress-plugin-enhanced-readabilities",
+        "vitepress",
         "@nolebase/ui",
         "@nolebase/vitepress-plugin-inline-link-preview",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
